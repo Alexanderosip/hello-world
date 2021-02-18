@@ -10,10 +10,10 @@ Second hello
 Проект, обеспечивающий зеркалирование представляет из себя докер, в который завёрнут основной сервис: https://github.com/Klowner/docker-gitlab-mirrors \
 Инструкция по развёртке присутствует в проекте. Ниже расписана её интерпретация с корректировками на имеющиеся условия.\
 Создать на хосте папку /srv/klowner/config:\
-`sudo mkdir -p /srv/klowner/config`\
+`sudo mkdir -p /srv/klowner/config`
 
 В ней создать папку .ssh:\
-`sudo mkdir /srv/klowner/config/.ssh`\
+`sudo mkdir /srv/klowner/config/.ssh`
 
 Создать файл:\
 `sudo vim /srv/klowner/config/.ssh/config`
@@ -27,10 +27,10 @@ IdentityFile ~/.ssh/osip_rsa
 ```
 
 Положить в папку /srv/klowner/config/.ssh/ закрытый ключ пользователя для зеркалирования Gitlab, открытый ключ которого прописан в web-интерфейсе Gitlab:\
-`sudo cp  ~/.ssh/osip_rsa /srv/klowner/config/.ssh/id_rsa`\
+`sudo cp  ~/.ssh/osip_rsa /srv/klowner/config/.ssh/id_rsa`
 
 Установить на ключ права:\
-`chmod 600 /srv/klowner/config/.ssh/id_rsa`\
+`chmod 600 /srv/klowner/config/.ssh/id_rsa`
 
 Завести в интерфейсе Gitlab пользователя (специально для зеркалирования) и дать ему права Maintainer на группу, которая будет содержать зеркала.\
 Зайти в систему под созданным пользователем.\
@@ -42,7 +42,8 @@ IdentityFile ~/.ssh/osip_rsa
 9aUMLFsWSCxZVkaBMmm1
 ```
 Скачать контейнер klowner:\
-`docker pull quay.io/klowner/gitlab-mirrors:latest`\
+`docker pull quay.io/klowner/gitlab-mirrors:latest`
+
 Все команды доступные для контейнера уже перечислены выше. Основные:
 - add - добавить зеркалируемый репозиторий
 - ls - перечислить заведённые репозитории
