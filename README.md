@@ -7,13 +7,13 @@ Hello from 2021
 Second hello
 
 # Развёртка, настройка и работа с контейнером klowner
-Проект, обеспечивающий зеркалирование представляет из себя докер, в который завёрнут основной сервис: https://github.com/Klowner/docker-gitlab-mirrors
-Инструкция по развёртке присутствует в проекте. Ниже расписана её интерпретация с корректировками на имеющиеся условия.
-Создать на хосте папку /srv/klowner/config:
-`sudo mkdir -p /srv/klowner/config`
-В ней создать папку .ssh:
-`sudo mkdir /srv/klowner/config/.ssh`
-Создать файл:
+Проект, обеспечивающий зеркалирование представляет из себя докер, в который завёрнут основной сервис: https://github.com/Klowner/docker-gitlab-mirrors \
+Инструкция по развёртке присутствует в проекте. Ниже расписана её интерпретация с корректировками на имеющиеся условия.\
+Создать на хосте папку /srv/klowner/config:\
+`sudo mkdir -p /srv/klowner/config`\
+В ней создать папку .ssh:\
+`sudo mkdir /srv/klowner/config/.ssh`\
+Создать файл:\
 `sudo vim /srv/klowner/config/.ssh/config`
 ```
 Host gitlab.example.com
