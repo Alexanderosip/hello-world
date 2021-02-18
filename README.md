@@ -11,8 +11,10 @@ Second hello
 Инструкция по развёртке присутствует в проекте. Ниже расписана её интерпретация с корректировками на имеющиеся условия.\
 Создать на хосте папку /srv/klowner/config:\
 `sudo mkdir -p /srv/klowner/config`\
+
 В ней создать папку .ssh:\
 `sudo mkdir /srv/klowner/config/.ssh`\
+
 Создать файл:\
 `sudo vim /srv/klowner/config/.ssh/config`
 ```
