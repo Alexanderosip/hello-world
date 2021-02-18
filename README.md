@@ -23,10 +23,13 @@ ForwardAgent yes
 StrictHostKeyChecking no
 IdentityFile ~/.ssh/osip_rsa
 ```
+
 Положить в папку /srv/klowner/config/.ssh/ закрытый ключ пользователя для зеркалирования Gitlab, открытый ключ которого прописан в web-интерфейсе Gitlab:\
 `sudo cp  ~/.ssh/osip_rsa /srv/klowner/config/.ssh/id_rsa`\
+
 Установить на ключ права:\
 `chmod 600 /srv/klowner/config/.ssh/id_rsa`\
+
 Завести в интерфейсе Gitlab пользователя (специально для зеркалирования) и дать ему права Maintainer на группу, которая будет содержать зеркала.\
 Зайти в систему под созданным пользователем.\
 Прописать пользователю в его настройках ssh ключ.\
